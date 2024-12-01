@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Курс Гривны к Доллару</title>
+</head>
+<body>
+    <h1>Курс Гривны к Доллару</h1>
+    <div id="rate">
+        Загрузка...
+    </div>
+    <div class="exchange-container">
+        <!-- Левый блок: Amount -->
+        <div class="input-container">
+          <label class="input-label" for="amount">Amount</label>
+          <div class="input-field">
+            <span class="currency-symbol">$</span>
+            <input
+              type="text"
+              id="amount"
+              inputmode="decimal"
+              autocomplete="off"
+              value="4.00"
+              class="amount-input"
+            />
+          </div>
+        </div>
+      
+        <!-- Правый блок: Currency selection -->
+        <div class="currency-container">
+          <!-- Откуда (From) -->
+          <div class="currency-box">
+            <img src="https://flagcdn.com/us.svg" alt="US Flag" class="currency-flag" />
+            <span class="currency-label">USD - US Dollar</span>
+          </div>
+      
+          <!-- Кнопка обмена -->
+          <button class="exchange-button">
+            <span class="exchange-icon">↔</span>
+          </button>
+      
+          <!-- Куда (To) -->
+          <div class="currency-box">
+            <img src="https://flagcdn.com/ua.svg" alt="UA Flag" class="currency-flag" />
+            <span class="currency-label">UAH - Ukrainian Hryvnia</span>
+          </div>
+        </div>
+      </div>                  
+    <script src="script.js"></script>
+    <link rel="stylesheet" href="styles.css">
+</body>
+</html>
